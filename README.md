@@ -1,2 +1,2 @@
-# jambox-project-debs
-Package creation for jambox-project repo
+# jambox-debs
+Package creation for repo.jambox-project.com
