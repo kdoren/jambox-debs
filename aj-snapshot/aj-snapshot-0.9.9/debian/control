@@ -1,0 +1,26 @@
+Source: aj-snapshot
+Section: sound
+Priority: optional
+Maintainer: Kevin Doren <kevin@doren.org>
+Build-Depends:
+ debhelper-compat (= 12),
+ libasound2-dev,
+ libjack-jackd2-dev,
+ libmxml-dev
+Standards-Version: 4.4.0
+Homepage: http://aj-snapshot.sourceforge.net/
+Vcs-Git: git://git.code.sf.net/p/aj-snapshot/code
+Vcs-Browser: https://sourceforge.net/p/aj-snapshot/code/ci/master/tree/
+
+Package: aj-snapshot
+Architecture: any
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends}
+Description: make snapshots of JACK connections
+ Aj-snapshot is a small program that can be used to make snapshots
+ of the connections made between JACK and/or ALSA clients. Because
+ JACK can provide both audio and MIDI support to programs,
+ aj-snapshot can store both types of connections for JACK. ALSA,
+ on the other hand, only provides routing facilities for MIDI clients.
+ Aj-snapshot is meant to be used from the command line.

@@ -1,0 +1,2 @@
+version=4
+http://sf.net/aj-snapshot/aj-snapshot-(.*)\.tar\.(?:bz2|gz|xz)
