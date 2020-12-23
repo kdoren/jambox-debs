@@ -1,0 +1,6 @@
+[submodule "jamulus/src"]
+	path = jamulus/src
+	url = https://github.com/corrados/jamulus.git
+[submodule "sonobus/src"]
+	path = sonobus/src
+	url = https://github.com/essej/sonobus.git

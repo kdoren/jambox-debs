@@ -1,0 +1,30 @@
+Source: jamulus
+Section: sound
+Priority: optional
+Maintainer: "Kevin Doren" <kevin@doren.org>
+Build-Depends:
+ build-essential,
+ debhelper (>= 11),
+ libjack-jackd2-dev,
+ qt5-default,
+ qt5-qmake,
+ qtdeclarative5-dev,
+ qttools5-dev-tools
+Standards-Version: 3.9.7
+Homepage: https://jamulus.io
+Vcs-Git: git://github.com/corrados/jamulus.git
+Vcs-Browser: https://github.com/corrados/jamulus
+
+Package: jamulus
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ adduser (>= 3.0)
+Description: Low latency Audio Server/Client
+ The Jamulus software enables musicians to perform real-time jam sessions over
+ the internet. There is one server running the Jamulus server software which
+ collects the audio data from each Jamulus client, mixes the audio data and
+ sends the mix back to each client.
+ .
+ It runs on Windows / OSX / Linux.
