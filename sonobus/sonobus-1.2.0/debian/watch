@@ -1,0 +1,5 @@
+version=4
+# GitHub hosted projects
+opts=uversionmangle=s%_%.%g,filenamemangle=s%(?:.*?)?(r\d[\d_]*)\.tar\.gz%@PACKAGE@-$1.tar.gz% \
+   https://github.com/essej/sonobus/tags \
+   (?:.*?/)?r(\d[\d_]*)\.tar\.gz debian uupdate
