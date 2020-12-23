@@ -1,5 +1,5 @@
-sonobus (1.2.0) buster; urgency=medium
+sonobus (1.2.0-1) buster; urgency=medium
 
-  * Raspberry Pi release 1.2.0.
+  * Raspberry Pi release 1.2.0-1.
 
  --  Kevin Doren <kevin@doren.org>  Sun, 20 Dec 2020 18:13:05 -0800
