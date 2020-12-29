@@ -7,3 +7,6 @@
 [submodule "aj-snapshot/src"]
 	path = aj-snapshot/src
 	url = git://git.code.sf.net/p/aj-snapshot/code
+[submodule "jacktrip/src"]
+	path = jacktrip/src
+	url = https://github.com/jacktrip/jacktrip.git

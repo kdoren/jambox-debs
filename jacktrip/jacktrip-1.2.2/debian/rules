@@ -1,0 +1,20 @@
+#!/usr/bin/make -f
+
+export QT_SELECT=qt5
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	mkdir -p builddir && cd builddir && qmake -spec linux-g++ ../src/jacktrip.pro
+
+override_dh_auto_build:
+	cd builddir && qmake -spec linux-g++ ../src/jacktrip.pro && make clean
+	cd builddir && qmake -spec linux-g++ ../src/jacktrip.pro && make -j`nproc` release
+
+override_dh_auto_install:
+	dh_install
+
+override_dh_auto_clean:
+	rm -rf builddir
+	dh_clean
