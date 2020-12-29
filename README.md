@@ -12,4 +12,5 @@ sudo apt update
 sudo apt-get install jamulus
 sudo apt-get install sonobus
 sudo apt-get install aj-snapshot
+sudo apt-get install jacktrip
 ```
