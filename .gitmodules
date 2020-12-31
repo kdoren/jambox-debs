@@ -4,6 +4,7 @@
 [submodule "sonobus/src"]
 	path = sonobus/src
 	url = https://github.com/essej/sonobus.git
+	branch = main
 [submodule "aj-snapshot/src"]
 	path = aj-snapshot/src
 	url = git://git.code.sf.net/p/aj-snapshot/code
