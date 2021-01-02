@@ -11,3 +11,7 @@
 [submodule "jacktrip/src"]
 	path = jacktrip/src
 	url = https://github.com/jacktrip/jacktrip.git
+[submodule "jamtrip/src"]
+	path = jamtrip/src
+	url = https://github.com/vicwomg/jamtrip.git
+	branch = main
