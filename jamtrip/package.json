@@ -100,8 +100,12 @@
     },
     "deb": {
       "fpm": [
-        "--architecture=armhf"
+        "--architecture=armhf",
+        "--deb-compression=gz"
       ]
+    },
+    "appImage": {
+      "license": "LICENSE"
     },
     "directories": {
       "buildResources": "resources",
