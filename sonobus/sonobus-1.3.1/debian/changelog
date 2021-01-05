@@ -1,3 +1,12 @@
+sonobus (1.3.1-1) buster; urgency=medium
+
+  * Raspberry Pi release 1.3.1-1.
+  * fixed level sending issue when sending mono
+  * added slider snap behavior option
+  * increased source send buffersize to avoid starvation
+
+ --  Kevin Doren <kevin@doren.org>  Wed, 05 Jan 2021 14:41:00 -0800
+
 sonobus (1.3.0-1) buster; urgency=medium
 
   * Raspberry Pi release 1.3.0-1.
