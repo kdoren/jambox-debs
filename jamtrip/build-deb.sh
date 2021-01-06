@@ -22,12 +22,13 @@ cd $DIR
 
 PACKAGE=jamtrip
 VERSION=0.1.2
-TAG=v0.1.2
+DEBIAN_REVISION=1
+# TAG=v0.1.2
 
 PKGFOLDER=${PACKAGE}-${VERSION}
 
 cd src
-git checkout tags/${TAG}
+[[ -n "$TAG" ]] && git checkout tags/${TAG}
 cd ..
 
 mkdir -p ${PKGFOLDER}
@@ -38,6 +39,7 @@ cd ${PKGFOLDER}
 /bin/cp -f ../package.json .
 export NODE_OPTIONS=--experimental-worker
 export USE_SYSTEM_FPM=true
+export ITERATION=${DEBIAN_REVISION}
 yarn
 yarn package-linux
 

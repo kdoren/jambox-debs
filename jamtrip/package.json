@@ -1,7 +1,7 @@
 {
   "name": "jamtrip",
   "productName": "JamTrip",
-  "description": "",
+  "description": "Front-end GUI for JACK and JackTrip for people using it for realtime music collaboration",
   "scripts": {
     "build": "concurrently \"yarn build-main\" \"yarn build-renderer\"",
     "build-dll": "cross-env NODE_ENV=development webpack --config ./configs/webpack.config.renderer.dev.dll.babel.js --colors",
@@ -101,7 +101,8 @@
     "deb": {
       "fpm": [
         "--architecture=armhf",
-        "--deb-compression=gz"
+        "--deb-compression=gz",
+	"--iteration=1"
       ]
     },
     "appImage": {
