@@ -1,0 +1,3 @@
+sed -i '/JACK_PROMISCUOUS_SERVER=jack/d' /etc/environment
+
+#DEBHELPER#

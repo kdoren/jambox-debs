@@ -1,0 +1,13 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_installsystemd:
+	cp $(CURDIR)/jack.service $(CURDIR)/debian/jack.service
+	dh_installsystemd --name=jack
+
+override_dh_install:
+	dh_install jackdrc /etc/
+	dh_install jackdrc.conf /etc/
+	dh_install

@@ -1,0 +1,5 @@
+jambox-jack (1.0.0-1) buster; urgency=low
+
+  * Raspberry Pi release 1.0.0-1
+
+ -- Kevin Doren <kevin@doren.org>  Wed, 20 Jan 2021 03:07:00 +0800

@@ -1,0 +1,13 @@
+Source: jambox-jack
+Section: sound
+Priority: optional
+Maintainer: Kevin Doren <kevin@doren.org>
+Build-Depends: debhelper (>=11~)
+Standards-Version: 4.1.4
+Homepage: https://github.com/kdoren
+
+Package: jambox-jack
+Architecture: any
+Multi-Arch: foreign
+Depends: ${misc:Depends}, ${shlibs:Depends}, adduser (>= 3.0), jackd2 (>= 1.9.12~)
+Description: Configures the Jack backend to be shared between users.
