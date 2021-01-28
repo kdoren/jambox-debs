@@ -1,0 +1,21 @@
+#!/usr/bin/make -f
+
+export QT_SELECT=qt5
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	cd PROJECTS/Standalone && qmake INCLUDEPATH+=../../minimp3 INCLUDEPATH+=/usr/include/miniupnpc Standalone.pro
+	cd PROJECTS/VstScanner && qmake VstScanner.pro
+
+override_dh_auto_build:
+	cd minimp3 && make && gcc -Os minimp3.o player_alsa.o -o libminimp3.a -shared
+	cd PROJECTS/Standalone && make -j`nproc`
+	cd PROJECTS/VstScanner && make -j`nproc`
+
+override_dh_auto_install:
+	dh_install
+
+override_dh_auto_clean:
+	dh_clean

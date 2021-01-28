@@ -15,3 +15,15 @@
 	path = jamtrip/src
 	url = https://github.com/vicwomg/jamtrip.git
 	branch = main
+[submodule "jamtaba/src"]
+	path = jamtaba/src
+	url = https://github.com/elieserdejesus/JamTaba.git
+[submodule "jamtaba/minimp3"]
+	path = jamtaba/minimp3
+	url = https://github.com/fredrikhederstierna/minimp3.git
+[submodule "jamtaba/vst3sdk"]
+	path = jamtaba/vst3sdk
+	url = https://github.com/steinbergmedia/vst3sdk.git
+[submodule "jamtaba/VST_SDK_2.4"]
+	path = jamtaba/VST_SDK_2.4
+	url = https://github.com/R-Tur/VST_SDK_2.4.git
