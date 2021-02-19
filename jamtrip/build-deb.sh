@@ -21,9 +21,9 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd $DIR
 
 PACKAGE=jamtrip
-VERSION=0.1.2
-DEBIAN_REVISION=1
-# TAG=v0.1.2
+VERSION=0.1.3
+DEBIAN_REVISION=0
+# TAG=v0.1.3
 
 PKGFOLDER=${PACKAGE}-${VERSION}
 
@@ -41,5 +41,5 @@ export NODE_OPTIONS=--experimental-worker
 export USE_SYSTEM_FPM=true
 export ITERATION=${DEBIAN_REVISION}
 yarn
-yarn package-linux
+yarn package-pi-deb
 

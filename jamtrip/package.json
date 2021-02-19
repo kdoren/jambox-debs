@@ -1,7 +1,7 @@
 {
   "name": "jamtrip",
   "productName": "JamTrip",
-  "description": "Front-end GUI for JACK and JackTrip for people using it for realtime music collaboration",
+  "description": "Graphical frontend for jack and jacktrip",
   "scripts": {
     "build": "concurrently \"yarn build-main\" \"yarn build-renderer\"",
     "build-dll": "cross-env NODE_ENV=development webpack --config ./configs/webpack.config.renderer.dev.dll.babel.js --colors",
@@ -17,7 +17,10 @@
     "package-all": "yarn build && electron-builder build -mwl",
     "package-ci": "yarn postinstall && yarn build && electron-builder --publish always",
     "package-mac": "yarn build && electron-builder build --mac",
-    "package-linux": "yarn build && electron-builder build --linux deb --armv7l",
+    "package-pi": "USE_SYSTEM_FPM=true yarn build && electron-builder build --linux dir --armv7l",
+    "package-pi-deb": "USE_SYSTEM_FPM=true yarn build && electron-builder build --linux deb --armv7l",
+    "package-pi-rpm": "USE_SYSTEM_FPM=true yarn build && electron-builder build --linux rpm --armv7l",
+    "package-linux": "yarn build && electron-builder build --linux",
     "package-win": "yarn build && electron-builder build --win --x64",
     "postinstall": "node -r @babel/register internals/scripts/CheckNativeDep.js && electron-builder install-app-deps && yarn build-dll && opencollective-postinstall",
     "postlint-fix": "prettier --ignore-path .eslintignore --single-quote --write '**/*.{js,jsx,json,html,css,less,scss,yml}'",
@@ -102,7 +105,7 @@
       "fpm": [
         "--architecture=armhf",
         "--deb-compression=gz",
-	"--iteration=1"
+	"--iteration=0"
       ]
     },
     "appImage": {
@@ -206,6 +209,7 @@
     "@types/enzyme": "^3.10.5",
     "@types/enzyme-adapter-react-16": "^1.0.6",
     "@types/history": "^4.7.7",
+    "@types/ip": "^1.1.0",
     "@types/jest": "^26.0.15",
     "@types/node": "12",
     "@types/react": "^16.9.44",
@@ -296,6 +300,7 @@
     "electron-settings": "^4.0.2",
     "electron-updater": "^4.3.4",
     "history": "^4.7.2",
+    "ip": "^1.1.5",
     "public-ip": "^4.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.12.0",
