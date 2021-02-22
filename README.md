@@ -9,9 +9,11 @@ sudo sh -c "echo 'deb http://repo.jambox-project.com buster main' > /etc/apt/sou
 sudo apt update
 
 # install packages from repo
-sudo apt-get install jamulus
-sudo apt-get install sonobus
-sudo apt-get install aj-snapshot
-sudo apt-get install jacktrip
-sudo apt-get install jamtrip
+sudo apt install jamulus
+sudo apt install sonobus
+sudo apt install aj-snapshot
+sudo apt install jacktrip
+sudo apt install jamtrip
+sudo apt install jamtaba
+sudo apt install qjacktrip
 ```
