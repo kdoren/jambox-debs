@@ -1,0 +1,29 @@
+Source: qjacktrip
+Section: sound
+Priority: optional
+Maintainer: "Kevin Doren" <kevin@doren.org>
+Build-Depends:
+ build-essential,
+ debhelper (>= 11),
+ dh-exec,
+ libjack-jackd2-dev,
+ qt5-default,
+ qt5-qmake,
+ qtdeclarative5-dev,
+ qttools5-dev-tools
+Standards-Version: 3.9.7
+Homepage: https://www.jacktrip.org
+Vcs-Git: git://github.com/jacktrip/jacktrip.git
+Vcs-Browser: https://github.com/jacktrip/jacktrip
+
+Package: qjacktrip
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ adduser (>= 3.0)
+Description: Low latency peer-to-peer audio streaming.
+ Jacktrip is an application for streaming high-quality,
+ low-latency peer-to-peer audio between devices
+ over the internet or a local network.
+ Qjacktrip adds a GUI wrapper to jacktrip.
