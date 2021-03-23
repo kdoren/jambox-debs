@@ -1,3 +1,25 @@
+sonobus (1.4.0-1) buster; urgency=medium
+
+  * Multi-channel (>2) support added
+  * Input Mixer added to control how the inputs are mixed and grouped
+  * Input effects are now per channel as configured by grouping
+  * Full gate/compressor/eq effects now available per user track
+  * You can route remote users to specific outputs
+  * Can now insert Audio Unit plugin in "instrument" slots
+  * Added minimal/full view mode choice
+  * Recording filenames now include group name
+  * Added support for MP3 playing on platforms that didn't have it
+  * Initially mute incoming audio of new connections
+  * Added Default User Volume level in options
+  * Text Chat added
+  * Self-monitoring delay (and backing track delay) options
+  * Added Group Latency Match feature
+  * Added command line options to start sonobus and connect
+  * Initial translation support for several languages
+  * Many bugfixes
+
+ --  Kevin Doren <kevin@doren.org>  Tue, 23 Mar 2021 00:20:00 -0800
+
 sonobus (1.3.2-1) buster; urgency=medium
 
   * Raspberry Pi release 1.3.3-1
