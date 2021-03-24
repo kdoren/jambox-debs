@@ -1,3 +1,10 @@
+sonobus (1.4.0-2) buster; urgency=medium
+
+  * Fix bug in build install script which packaged in correct binary
+  * Add symlink to old name for script compatibility.
+
+ --  Kevin Doren <kevin@doren.org>  Wed, 24 Mar 2021 01:10:00 -0800
+
 sonobus (1.4.0-1) buster; urgency=medium
 
   * Multi-channel (>2) support added

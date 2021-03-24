@@ -1,4 +1,4 @@
 #!/usr/bin/dh-exec
-Builds/LinuxMakefile/build/SonoBus usr/bin/
+Builds/LinuxMakefile/build/sonobus usr/bin/
 Builds/LinuxMakefile/sonobus.desktop usr/share/applications/
 images/sonobus_logo@2x.png => usr/share/pixmaps/sonobus.png
