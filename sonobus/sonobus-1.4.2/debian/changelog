@@ -1,3 +1,14 @@
+sonobus (1.4.2-1) buster; urgency=medium
+
+  * Added Auto Jitter buffer adjust drop rate threshold option
+  * Prevent user leave/join messages in chat in public groups
+  * Simplified update check download
+  * Fixed layout of public group page
+  * Updated some visual elements (time sliders, etc)
+  * Updated translations
+
+ --  Kevin Doren <kevin@doren.org>  Thu, 25 Mar 2021 20:50:00 -0800
+
 sonobus (1.4.0-2) buster; urgency=medium
 
   * Fix bug in build install script which packaged in correct binary

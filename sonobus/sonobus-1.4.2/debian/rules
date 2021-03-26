@@ -1,6 +1,7 @@
 #!/usr/bin/make -f
 
 export CONFIG=Release
+export CFLAGS="-march=native"
 
 %:
 	dh $@
