@@ -1,3 +1,10 @@
+sonobus (1.4.3-1) buster; urgency=medium
+
+  * Fixed bug when using file playback and recording simultaneously
+  * Added return-to-start button for file playback (keybinding is 0)
+
+ --  Kevin Doren <kevin@doren.org>  Thu, 03 Apr 2021 15:47:00 -0800
+
 sonobus (1.4.2-1) buster; urgency=medium
 
   * Added Auto Jitter buffer adjust drop rate threshold option
