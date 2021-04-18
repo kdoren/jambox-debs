@@ -1,13 +1,13 @@
 #!/usr/bin/make -f
 
 export CONFIG=Release
-export CFLAGS="-march=native"
+#export CFLAGS="-march=native"
 
 %:
 	dh $@
 
 override_dh_auto_build:
-	cd Builds/LinuxMakefile && make -j`nproc` Standalone
+	./setupcmake.sh && cmake --build build --config ${CONFIG} -j `nproc`
 
 override_dh_auto_install:
 	dh_install

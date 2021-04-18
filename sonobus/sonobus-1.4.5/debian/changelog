@@ -1,3 +1,16 @@
+sonobus (1.4.5-2) buster; urgency=medium
+
+  * Now makes separate self-record files for each input group
+  * Added option to record self pre or post FX
+  * From 1.4.4:
+  * Fixed elapsed recording time when only others are recorded
+  * Fixed self recording so it captures all input channels
+  * Prevent illegal filenames so that recording doesn't fail
+  * Fixed initial file playback UI so it correctly restores
+  * Updated Spanish and Japanese translation
+
+ --  Kevin Doren <kevin@doren.org>  Fri, 16 Apr 2021 21:00:00 -0800
+
 sonobus (1.4.3-1) buster; urgency=medium
 
   * Fixed bug when using file playback and recording simultaneously

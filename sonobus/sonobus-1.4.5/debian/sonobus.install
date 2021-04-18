@@ -1,0 +1,4 @@
+#!/usr/bin/dh-exec
+build/SonoBus_artefacts/Release/Standalone/sonobus usr/bin/
+linux/sonobus.desktop usr/share/applications/
+images/sonobus_logo@2x.png => usr/share/pixmaps/sonobus.png
