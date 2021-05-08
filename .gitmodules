@@ -30,3 +30,6 @@
 [submodule "qjacktrip/src"]
 	path = qjacktrip/src
 	url = https://github.com/jacktrip/jacktrip.git
+[submodule "jammernetz/src"]
+	path = jammernetz/src
+	url = https://github.com/christofmuc/JammerNetz.git

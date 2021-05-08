@@ -1,0 +1,24 @@
+#!/usr/bin/make -f
+
+#export CONFIG=Release
+#export CFLAGS="-march=native"
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	cmake -S . -B builds -G "Unix Makefiles" && \
+	cd third_party/flatbuffers && \
+	cmake -S . -B LinuxBuilds -G "Unix Makefiles" -D FLATBUFFERS_CXX_FLAGS="-Wno-error" && \
+	cmake --build LinuxBuilds/ && \
+	cd ../.. && \
+	cmake --build builds
+
+override_dh_auto_test:
+	cd builds/common && make test
+
+override_dh_auto_install:
+	dh_install
+
+override_dh_auto_clean:
+	dh_clean

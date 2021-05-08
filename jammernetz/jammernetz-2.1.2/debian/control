@@ -1,0 +1,33 @@
+Source: jammernetz
+Section: sound
+Priority: optional
+Maintainer: "Kevin Doren" <kevin@doren.org>
+Build-Depends:
+ build-essential,
+ debhelper (>= 11),
+ dh-exec,
+ libasound2-dev,
+ libcurl4-openssl-dev,
+ libfreetype6-dev,
+ libncurses-dev,
+ libjack-jackd2-dev,
+ libx11-dev,
+ libglew-dev,
+ mesa-common-dev,
+ libwebkit2gtk-4.0-dev
+Standards-Version: 3.9.7
+Homepage: https://github.com/christofmuc/JammerNetz
+Vcs-Git: git://github.com/christofmuc/JammerNetz.git
+Vcs-Browser: https://github.com/christofmuc/JammerNetz.git
+
+Package: jammernetz
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends}
+Description: Low latency peer-to-peer audio streaming.
+ JammerNetz is an Open Source system for "networked music performance" (NMP),
+ also known as "jamming over the internet". 
+ It consists of a lightweight server software, and a little UI client software
+ that can use your audio devices and stream multiple uncompressed high-quality
+ audio channels to other participants as a common mixdown.
