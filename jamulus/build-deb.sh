@@ -5,8 +5,8 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd $DIR
 
 PACKAGE=jamulus
-VERSION=3.7.0
-TAG=r3_7_0
+VERSION=3.8.0
+TAG=r3_8_0
 
 PKGFOLDER=${PACKAGE}-${VERSION}
 
