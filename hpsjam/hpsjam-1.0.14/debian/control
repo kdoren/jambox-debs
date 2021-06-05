@@ -1,0 +1,27 @@
+Source: hpsjam
+Section: sound
+Priority: optional
+Maintainer: "Kevin Doren" <kevin@doren.org>
+Build-Depends:
+ build-essential,
+ debhelper (>= 11),
+ dh-exec,
+ libjack-jackd2-dev,
+ qt5-default,
+ qt5-qmake,
+ qtdeclarative5-dev,
+ qttools5-dev-tools,
+ libqt5svg5-dev,
+ libfftw3-dev
+Standards-Version: 3.9.7
+Homepage: https://github.com/hselasky/hpsjam
+Vcs-Git: git://github.com/hselasky/hpsjam.git
+Vcs-Browser: https://github.com/hselasky/hpsjam.git
+
+Package: hpsjam
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ adduser (>= 3.0)
+Description: Online audio jamming software

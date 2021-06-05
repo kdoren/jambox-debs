@@ -33,3 +33,6 @@
 [submodule "jammernetz/src"]
 	path = jammernetz/src
 	url = https://github.com/christofmuc/JammerNetz.git
+[submodule "hpsjam/src"]
+	path = hpsjam/src
+	url = https://github.com/hselasky/hpsjam.git

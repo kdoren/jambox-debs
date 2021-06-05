@@ -1,0 +1,4 @@
+#!/usr/bin/dh-exec
+build/HpsJam usr/bin/
+HpsJam.desktop usr/share/applications/
+HpsJam.png usr/share/icons/
