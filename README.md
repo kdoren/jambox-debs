@@ -17,4 +17,5 @@ sudo apt install jamtrip
 sudo apt install jamtaba
 sudo apt install qjacktrip
 sudo apt install jammernetz
+sudo apt install hpsjam
 ```
