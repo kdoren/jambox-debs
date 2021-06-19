@@ -1,3 +1,9 @@
+sonobus (1.4.6-1) buster; urgency=medium
+
+  * Accessibility improvements
+
+ --  Kevin Doren <kevin@doren.org>  Fri, 18 Jun 2021 18:30:00 -0800
+
 sonobus (1.4.5-2) buster; urgency=medium
 
   * Now makes separate self-record files for each input group

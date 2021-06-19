@@ -5,12 +5,14 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd $DIR
 
 PACKAGE=sonobus
-VERSION=1.4.5
-TAG=1.4.5
+VERSION=1.4.6
+TAG=1.4.6
 
 PKGFOLDER=${PACKAGE}-${VERSION}
 
 cd src
+git checkout main
+git pull --recurse-submodules
 git checkout tags/${TAG}
 cd ..
 
@@ -21,7 +23,7 @@ fi
 
 mkdir -p ${PKGFOLDER}
 cp -r src/* ${PKGFOLDER}
-tar -czf ${PKGFOLDER}.tar.gz --exclude .git ${PKGFOLDER}
+#tar -czf ${PKGFOLDER}.tar.gz --exclude .git ${PKGFOLDER}
 
 cd ${PKGFOLDER}
 
