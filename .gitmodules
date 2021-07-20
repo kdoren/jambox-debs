@@ -36,3 +36,6 @@
 [submodule "hpsjam/src"]
 	path = hpsjam/src
 	url = https://github.com/hselasky/hpsjam.git
+[submodule "jackd2/src"]
+	path = jackd2/src
+	url = https://github.com/jackaudio/jack2.git

@@ -1,0 +1,12 @@
+hpsjam (1.0.15-1) buster; urgency=medium
+
+  * Implement sleep mode for server side
+
+ --  Kevin Doren <kevin@doren.org>  Sun, 18 Jul 2021 10:00:00 -0800
+
+
+hpsjam (1.0.14-1) buster; urgency=medium
+
+  * Raspberry Pi release v1.0.14-1
+
+ --  Kevin Doren <kevin@doren.org>  Sat, 05 Jun 2021 10:00:00 -0800

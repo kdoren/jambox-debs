@@ -5,8 +5,8 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd $DIR
 
 PACKAGE=hpsjam
-VERSION=1.0.14
-TAG=v1.0.14
+VERSION=1.0.15
+TAG=v1.0.15
 
 PKGFOLDER=${PACKAGE}-${VERSION}
 
