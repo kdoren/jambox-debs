@@ -1,3 +1,11 @@
+hpsjam (1.0.16-1) buster; urgency=medium
+
+  * Slow down jitter adjustments
+  * Add range check for index computation
+  * Improve handling of jitter on buffer underruns
+
+ --  Kevin Doren <kevin@doren.org>  Thu, 29 Jul 2021 03:00:00 -0800
+
 hpsjam (1.0.15-1) buster; urgency=medium
 
   * Implement sleep mode for server side
