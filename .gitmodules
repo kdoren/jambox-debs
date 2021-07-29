@@ -39,3 +39,12 @@
 [submodule "jackd2/src"]
 	path = jackd2/src
 	url = https://github.com/jackaudio/jack2.git
+[submodule "alsa-utils/src"]
+	path = alsa-utils/src
+	url = https://github.com/alsa-project/alsa-utils.git
+[submodule "alsa-lib/src"]
+	path = alsa-lib/src
+	url = https://github.com/alsa-project/alsa-lib.git
+[submodule "alsa-topology-conf/src"]
+	path = alsa-topology-conf/src
+	url = https://github.com/alsa-project/alsa-topology-conf.git
