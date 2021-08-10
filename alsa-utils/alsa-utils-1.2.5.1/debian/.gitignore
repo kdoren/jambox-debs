@@ -1,0 +1,10 @@
+autoreconf.*
+copyright_newhints
+debhelper-build-stamp
+files
+gitlab-ci.yml
+stamp*
+symbols*
+*.debhelper
+*.log
+*.substvars

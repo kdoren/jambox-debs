@@ -1,0 +1,16 @@
+*.o
+**/debug
+**/release
+**/deploy
+**/build
+*.bak
+*.deb
+*.debhelper
+*.build
+*.buildinfo
+*.changes
+*.log
+*.gz
+*.substvars
+*.udeb
+*.zip
