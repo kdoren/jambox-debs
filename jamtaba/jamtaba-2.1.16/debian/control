@@ -36,6 +36,9 @@ Depends:
  libqt5multimediawidgets5,
  libqt5websockets5,
  libminiupnpc17
+Recommends:
+ libqt5multimedia5-plugins,
+ gstreamer1.0-plugins-bad
 Description: Play online music jam sessions using ninjam servers.
  A free (and open source) software to connect in ninjam servers
  and play music jam sessions with people around the world.
