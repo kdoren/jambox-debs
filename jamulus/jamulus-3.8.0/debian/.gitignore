@@ -1,0 +1,7 @@
+debhelper-build-stamp
+files
+stamp-makefile-build
+stamp-makefile-install
+*.debhelper
+*.log
+*.substvars
