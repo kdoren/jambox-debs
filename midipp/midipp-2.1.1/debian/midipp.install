@@ -1,0 +1,5 @@
+#!/usr/bin/dh-exec
+build/midipp usr/bin/
+midipp.desktop usr/share/applications/
+midipp.png usr/share/icons/
+libumidi/libumidi20.so.1.0 usr/lib/

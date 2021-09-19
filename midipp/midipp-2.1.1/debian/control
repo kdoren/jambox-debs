@@ -1,0 +1,26 @@
+Source: midipp
+Section: sound
+Priority: optional
+Maintainer: "Kevin Doren" <kevin@doren.org>
+Build-Depends:
+ build-essential,
+ debhelper (>= 11),
+ dh-exec,
+ libjack-jackd2-dev,
+ qt5-default,
+ qt5-qmake,
+ qtdeclarative5-dev,
+ qttools5-dev-tools,
+ libqt5svg5-dev,
+ bmake
+Standards-Version: 3.9.7
+Homepage: https://github.com/hselasky/midipp
+Vcs-Git: git://github.com/hselasky/midipp.git
+Vcs-Browser: https://github.com/hselasky/midipp.git
+
+Package: midipp
+Architecture: any
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends}
+Description: MIDI Player Pro

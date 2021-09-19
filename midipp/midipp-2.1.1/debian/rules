@@ -1,0 +1,22 @@
+#!/usr/bin/make -f
+
+export QT_SELECT=qt5
+export DEB_BUILD_OPTIONS=nostrip
+
+%:
+	dh $@
+
+override_dh_auto_configure:
+	echo 'SHLIB_SHFLAGS=-Wl,--soname=lib$${LIB}.so.$${SHLIB_SOVERSION}' >> libumidi/Makefile
+	mkdir -p build && cd build && qmake INCLUDEPATH+=../libumidi LIBS+=-L../libumidi PREFIX=/usr/local QMAKE_CFLAGS_ISYSTEM=-I -o Makefile.unix ../midipp.pro 
+
+override_dh_auto_build:
+	$(shell cd libumidi && bmake clean && HAVE_JACK=1 bmake)
+	cd build && make -j`nproc` -f Makefile.unix all
+
+override_dh_auto_install:
+	dh_install
+
+override_dh_auto_clean:
+	rm -rf build
+	dh_clean
