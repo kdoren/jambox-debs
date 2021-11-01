@@ -1,3 +1,12 @@
+hpsjam (1.0.17-1) buster; urgency=medium
+
+  * GUI fix when using JACK audio backend
+  * Fix server deadlock
+  * Re-work device selection using a dropdown combo box
+  * Add missing functionality on server side to send initial mixer parameters
+
+ --  Kevin Doren <kevin@doren.org>  Thu, 01 Nov 2021 10:00:00 -0800
+
 hpsjam (1.0.16-1) buster; urgency=medium
 
   * Slow down jitter adjustments
