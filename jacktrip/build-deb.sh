@@ -24,6 +24,7 @@ fi
 
 mkdir -p ${PKGFOLDER}
 cp -r src/* ${PKGFOLDER}
+cp jacktrip.desktop ${PKGFOLDER}
 # tar -czf ${PKGFOLDER}.tar.gz --exclude .git ${PKGFOLDER}
 
 cd ${PKGFOLDER}

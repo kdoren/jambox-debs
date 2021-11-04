@@ -1,2 +1,6 @@
 #!/usr/bin/dh-exec
 builddir/jacktrip usr/bin/
+linux/icons/jacktrip.svg usr/share/icons/
+linux/icons/jacktrip_48x48.png => usr/share/icons/jacktrip.png
+linux/icons/jacktrip_48x48.png => usr/share/icons/qjacktrip.png
+jacktrip.desktop usr/share/applications/
