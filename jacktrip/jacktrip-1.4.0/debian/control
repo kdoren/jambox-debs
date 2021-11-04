@@ -22,6 +22,10 @@ Depends:
  ${shlibs:Depends},
  ${misc:Depends},
  adduser (>= 3.0)
+Conflicts:
+ qjacktrip
+Replaces:
+ qjacktrip
 Description: Low latency peer-to-peer audio streaming.
  Jacktrip is an application for streaming high-quality,
  low-latency peer-to-peer audio between devices
