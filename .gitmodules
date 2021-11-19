@@ -51,3 +51,6 @@
 [submodule "midipp/src"]
 	path = midipp/src
 	url = https://github.com/hselasky/midipp.git
+[submodule "mididings/src"]
+	path = mididings/src
+	url = https://github.com/sutasu/mididings.git
