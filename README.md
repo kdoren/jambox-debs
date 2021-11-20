@@ -1,6 +1,8 @@
 # jambox-debs
 Package creation for repo.jambox-project.com
 
+The jambox-project apt repo contains recent armhf builds of music and jamming-related software packaged from upstream sources.  Includes jackd2, alsa-lib, alsa-utils, and mididings. Jamming apps include jamulus, sonobus, jamtaba, jacktrip, hpsjam, and jammernetz. 
+
 To use:
 ```
 # add gpg key and repo to apt
@@ -13,9 +15,8 @@ sudo apt install jamulus
 sudo apt install sonobus
 sudo apt install aj-snapshot
 sudo apt install jacktrip
-sudo apt install jamtrip
 sudo apt install jamtaba
-sudo apt install qjacktrip
 sudo apt install jammernetz
 sudo apt install hpsjam
+sudo apt install mididings mididings-doc
 ```
