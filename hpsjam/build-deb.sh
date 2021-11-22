@@ -5,8 +5,8 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd $DIR
 
 PACKAGE=hpsjam
-VERSION=1.0.17
-TAG=v1.0.17
+VERSION=1.0.20
+TAG=v1.0.20
 
 PKGFOLDER=${PACKAGE}-${VERSION}
 
@@ -16,12 +16,9 @@ git pull
 git checkout ${TAG}
 cd ..
 
-if [ -d ${PKGFOLDER} ]; then
-  rm -rf ${PKGFOLDER}/{build,icons,linux,mac,sounds,src,windows}
-  rm -f ${PKGFOLDER}/HpsJam* ${PKGFOLDER}/{LICENSE,README.md}
-fi
-
-mkdir -p ${PKGFOLDER}
+[[ -d ${PKGFOLDER} ]] && rm -rf ${PKGFOLDER}
+mkdir -p ${PKGFOLDER}/debian
+cp -r debian/* ${PKGFOLDER}/debian/
 cp -r src/* ${PKGFOLDER}
 #tar -czf ${PKGFOLDER}.tar.gz --exclude .git ${PKGFOLDER}
 

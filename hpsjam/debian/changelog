@@ -1,3 +1,22 @@
+hpsjam (1.0.20-1) buster; urgency=medium
+
+  * Add support for muting peer audio on connect.
+  * Add support for using HpsJAM headless.
+
+ --  Kevin Doren <kevin@doren.org>  Sun, 21 Nov 2021 18:00:00 -0800
+
+hpsjam (1.0.19-1) buster; urgency=medium
+  * Rework packet timing again.
+  * Implement --rtprio argument for FreeBSD.
+
+ --  Kevin Doren <kevin@doren.org>  Sun, 21 Nov 2021 18:00:00 -0800
+
+hpsjam (1.0.18-1) buster; urgency=medium
+  * Implement timing trick to get more accurate packet stream.
+  * Fix for BlackHole.
+
+ --  Kevin Doren <kevin@doren.org>  Sun, 21 Nov 2021 18:00:00 -0800
+
 hpsjam (1.0.17-1) buster; urgency=medium
 
   * GUI fix when using JACK audio backend
@@ -24,6 +43,6 @@ hpsjam (1.0.15-1) buster; urgency=medium
 
 hpsjam (1.0.14-1) buster; urgency=medium
 
-  * Raspberry Pi release v1.0.14-1
+  * Debian release v1.0.14-1
 
  --  Kevin Doren <kevin@doren.org>  Sat, 05 Jun 2021 10:00:00 -0800
