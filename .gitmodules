@@ -54,3 +54,6 @@
 [submodule "mididings/src"]
 	path = mididings/src
 	url = https://github.com/sutasu/mididings.git
+[submodule "rosegarden/src"]
+	path = rosegarden/src
+	url = https://salsa.debian.org/multimedia-team/rosegarden.git
