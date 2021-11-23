@@ -4,7 +4,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
 cd $DIR
 
-PACKAGE=rodegarden
+PACKAGE=rosegarden
 VERSION=21.06.1
 TAG=debian/1%21.06.1-1
 
