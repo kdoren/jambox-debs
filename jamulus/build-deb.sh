@@ -17,12 +17,9 @@ git pull --recurse-submodules
 git checkout tags/${TAG}
 cd ..
 
-if [ -d ${PKGFOLDER} ]; then
-  rm -rf ${PKGFOLDER}/{android,autobuild,distributions,ios,libs,linux,mac,src,tools,windows,build-gui}
-  rm -f ${PKGFOLDER}/*.o ${PKGFOLDER}/*.cpp ${PKGFOLDER}/*.h ${PKGFOLDER}/*.md
-fi
-
-mkdir -p ${PKGFOLDER}
+[[ -d ${PKGFOLDER} ]] && rm -rf ${PKGFOLDER}
+mkdir -p ${PKGFOLDER}/debian
+cp -r debian/* ${PKGFOLDER}/debian/
 cp -r src/* ${PKGFOLDER}
 # tar -czf ${PKGFOLDER}.tar.gz --exclude .git ${PKGFOLDER}
 
