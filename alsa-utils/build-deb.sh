@@ -5,8 +5,8 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd $DIR
 
 PACKAGE=alsa-utils
-VERSION=1.2.5.1
-TAG=v1.2.5.1
+VERSION=1.2.6
+TAG=v1.2.6
 
 PKGFOLDER=${PACKAGE}-${VERSION}
 
