@@ -27,9 +27,6 @@
 [submodule "jamtaba/VST_SDK_2.4"]
 	path = jamtaba/VST_SDK_2.4
 	url = https://github.com/R-Tur/VST_SDK_2.4.git
-[submodule "qjacktrip/src"]
-	path = qjacktrip/src
-	url = https://github.com/jacktrip/jacktrip.git
 [submodule "jammernetz/src"]
 	path = jammernetz/src
 	url = https://github.com/christofmuc/JammerNetz.git
