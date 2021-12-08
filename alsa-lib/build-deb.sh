@@ -11,18 +11,20 @@ TAG=v1.2.5.1
 
 PKGFOLDER=${PACKAGE}-${VERSION}
 
+mkdir -p ${PKGFOLDER}
+cp -r src/* ${PKGFOLDER}
+#tar -czf ${PKGFOLDER}.tar.gz --exclude .git ${PKGFOLDER}
+
 cd src
 git checkout master
-git pull
-git checkout ${TAG}
+git submodule update --init
+git pull --recurse-submodules
+git checkout tags/${TAG}
 cd ..
 
-if [ -d ${PKGFOLDER} ]; then
-  rm -rf ${PKGFOLDER}/debian/{libasound2,libasound2-data,libasound2-dev,libasound2-doc,libasound2-plugin-smixer,libasound2-udeb,libatopology2,libatopology-dev}
-  rm -f ${PKGFOLDER}/debian/{debhelper-build-stamp,files} ${PKGFOLDER}/debian/autoreconf.* ${PKGFOLDER}/debian/*.debhelper ${PKGFOLDER}/debian/*.substvars ${PKGFOLDER}/debian/*.log
-fi
-
-mkdir -p ${PKGFOLDER}
+[[ -d ${PKGFOLDER} ]] && rm -rf ${PKGFOLDER}
+mkdir -p ${PKGFOLDER}/debian
+cp -r debian/* ${PKGFOLDER}/debian/
 cp -r src/* ${PKGFOLDER}
 #tar -czf ${PKGFOLDER}.tar.gz --exclude .git ${PKGFOLDER}
 
