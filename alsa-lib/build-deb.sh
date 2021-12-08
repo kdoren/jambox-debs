@@ -11,10 +11,6 @@ TAG=v1.2.6
 
 PKGFOLDER=${PACKAGE}-${VERSION}
 
-mkdir -p ${PKGFOLDER}
-cp -r src/* ${PKGFOLDER}
-#tar -czf ${PKGFOLDER}.tar.gz --exclude .git ${PKGFOLDER}
-
 cd src
 git checkout master
 git submodule update --init
