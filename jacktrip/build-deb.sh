@@ -5,8 +5,8 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd $DIR
 
 PACKAGE=jacktrip
-VERSION=1.4.0
-TAG=v1.4.0
+VERSION=1.4.2
+TAG=v1.4.2
 
 PKGFOLDER=${PACKAGE}-${VERSION}
 
@@ -17,12 +17,9 @@ git pull --recurse-submodules
 git checkout tags/${TAG}
 cd ..
 
-if [ -d ${PKGFOLDER} ]; then
-  rm -rf ${PKGFOLDER}/{builddir,cross,docs,documentation,externals,faust-src,LICENSES,linux,macos,papers,scripts,src,subprojects,tests,win}
-  rm -f ${PKGFOLDER}/*.txt ${PKGFOLDER}/*.pro ${PKGFOLDER}/LICENSE* ${PKGFOLDER}/meson* ${PKGFOLDER}/INSTALL* ${PKGFOLDER}/{Doxyfile,jacktrip+doxygen,meson.build,mkdocs.yml}
-fi
-
-mkdir -p ${PKGFOLDER}
+[[ -d ${PKGFOLDER} ]] && rm -rf ${PKGFOLDER}
+mkdir -p ${PKGFOLDER}/debian
+cp -r debian/* ${PKGFOLDER}/debian/
 cp -r src/* ${PKGFOLDER}
 cp jacktrip.desktop ${PKGFOLDER}
 # tar -czf ${PKGFOLDER}.tar.gz --exclude .git ${PKGFOLDER}
