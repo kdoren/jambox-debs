@@ -1,4 +1,0 @@
-#!/usr/bin/dh-exec
-build/qjacktrip usr/bin/
-src/icon.png => usr/share/icons/qjacktrip.png
-qjacktrip.desktop usr/share/applications/
