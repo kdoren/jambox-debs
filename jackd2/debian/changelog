@@ -1,14 +1,35 @@
+jackd2 (1.9.19~dfsg-2) unstable; urgency=medium
+
+  * Team upload
+  * debian/:
+    - Convert to debhelper compat 13
+    - Filter linux-any specific files using dh-exec
+    - Fix FTCBFS (Closes: #912907)
+  * debian/control: Remove obsolete Depends and Replaces
+  * debian/copyright: Clean up copyright file and merge paragraphs
+  * debian/patches: Remove unused patch
+  * debian/libjack-jackd2-0.lintian-overrides: Fix lintian tag name
+
+ -- Sebastian Ramacher <sramacher@debian.org>  Thu, 02 Sep 2021 13:35:50 +0200
+
 jackd2 (1.9.19~dfsg-1) unstable; urgency=medium
 
-  * Raspberry Pi release v1.9.19-1
+  * Team upload
 
- --  Kevin Doren <kevin@doren.org>  Mon, 19 Jul 2021 23:00:00 -0800
+  [ Erich Eickmeyer ]
+  * Add libdb-dev is a build dependency for metadata per upstream (Closes:
+    #985050)
 
-jackd2 (1.9.18~dfsg-1) unstable; urgency=medium
+  [ Sebastian Ramacher ]
+  * New upstream release
+  * debian/copyright:
+    - Remove bogus paragraphs
+    - Add new paragraph for zalsa
+  * debian/copyright: Bump Standards-Version
+  * debian/: Build with zalsa client
+  * debian/jackd2.maintscript: Remove now obsolete rm_conffile
 
-  * Raspberry Pi release v1.9.18-1
-
- --  Kevin Doren <kevin@doren.org>  Fri, 02 Jul 2021 23:00:00 -0800
+ -- Sebastian Ramacher <sramacher@debian.org>  Thu, 02 Sep 2021 00:31:19 +0200
 
 jackd2 (1.9.17~dfsg-1) unstable; urgency=medium
 
