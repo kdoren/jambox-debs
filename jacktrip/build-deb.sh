@@ -5,8 +5,8 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd $DIR
 
 PACKAGE=jacktrip
-VERSION=1.4.3
-TAG=v1.4.3
+VERSION=1.5.0
+TAG=v1.5.0
 
 PKGFOLDER=${PACKAGE}-${VERSION}
 

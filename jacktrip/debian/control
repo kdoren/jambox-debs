@@ -10,7 +10,8 @@ Build-Depends:
  qt5-default,
  qt5-qmake,
  qtdeclarative5-dev,
- qttools5-dev-tools
+ qttools5-dev-tools,
+ help2man
 Standards-Version: 3.9.7
 Homepage: https://www.jacktrip.org
 Vcs-Git: git://github.com/jacktrip/jacktrip.git
