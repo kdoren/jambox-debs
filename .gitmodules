@@ -54,3 +54,6 @@
 [submodule "rosegarden/src"]
 	path = rosegarden/src
 	url = https://salsa.debian.org/multimedia-team/rosegarden.git
+[submodule "rtaudio/src"]
+	path = rtaudio/src
+	url = https://salsa.debian.org/multimedia-team/rtaudio.git
