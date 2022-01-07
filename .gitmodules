@@ -57,3 +57,6 @@
 [submodule "rtaudio/src"]
 	path = rtaudio/src
 	url = https://salsa.debian.org/multimedia-team/rtaudio.git
+[submodule "rtmidi/src"]
+	path = rtmidi/src
+	url = https://salsa.debian.org/multimedia-team/rtmidi.git
