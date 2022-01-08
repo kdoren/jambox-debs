@@ -37,4 +37,10 @@ cp -pr ../vst3sdk VST_SDK/VST3_SDK
 cp -pr ../VST_SDK_2.4 VST_SDK/VST2_SDK
 cp -pr ../minimp3 minimp3
 
+cat >> minimp3/Makefile << EOF
+
+minimp3.a : \$(OJBS)
+	gcc \$(CFLAGS) \$(OBJS) -o \$@ -shared
+EOF
+
 echo y | debuild -b -us -uc -j`nproc`

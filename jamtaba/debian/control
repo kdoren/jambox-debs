@@ -23,7 +23,7 @@ Build-Depends:
  libswresample-dev,
  libminiupnpc17
 Standards-Version: 3.9.7
-Homepage: jamtaba.com
+Homepage: https://github.com/elieserdejesus/JamTaba
 Vcs-Git: https://github.com/elieserdejesus/JamTaba.git
 Vcs-Browser: https://github.com/elieserdejesus/JamTaba
 
