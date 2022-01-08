@@ -1,0 +1,13 @@
+jamtaba (2.1.16-2) buster; urgency=medium
+
+  * Raspberry Pi release 2.1.16-2
+  - build with newer rtmidi and vst3sdk
+
+ --  Kevin Doren <kevin@doren.org>  Sat, 08 Jan 2022 01:00:00 -0800
+
+jamtaba (2.1.16-1) buster; urgency=medium
+
+  * Raspberry Pi release 2.1.16-1
+
+ --  Kevin Doren <kevin@doren.org>  Wed, 27 Jan 2021 23:06:00 -0800
+
