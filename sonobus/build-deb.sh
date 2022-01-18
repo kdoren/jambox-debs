@@ -12,18 +12,15 @@ PKGFOLDER=${PACKAGE}-${VERSION}
 
 cd src
 git checkout main
+git submodule update --init
 git pull --recurse-submodules
 git checkout tags/${TAG}
 cd ..
 
-if [ -d ${PKGFOLDER} ]; then
-  rm -rf ${PKGFOLDER}/{build,doc,localization,scripts,images,mobile,Source,JuceLibraryCode,obj-arm-linux-gnueabihf,deps,linux,release,snap}
-  rm -f ${PKGFOLDER}/*.sh ${PKGFOLDER}/{SonoBus.jucer,CMakeLists.txt,LICENSE,README.md}
-fi
-
-mkdir -p ${PKGFOLDER}
+[[ -d ${PKGFOLDER} ]] && rm -rf ${PKGFOLDER}
+mkdir -p ${PKGFOLDER}/debian
+cp -r debian/* ${PKGFOLDER}/debian/
 cp -r src/* ${PKGFOLDER}
-#tar -czf ${PKGFOLDER}.tar.gz --exclude .git ${PKGFOLDER}
 
 cd ${PKGFOLDER}
 
