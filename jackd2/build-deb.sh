@@ -5,15 +5,16 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd $DIR
 
 PACKAGE=jackd2
-VERSION=1.9.19
-TAG=v1.9.19
+VERSION=1.9.20
+TAG=v1.9.20
 
 PKGFOLDER=${PACKAGE}-${VERSION}
 
 cd src
 git checkout develop
-git submodule update --init
-git pull --recurse-submodules
+#git submodule update --init
+#git pull --recurse-submodules
+git pull
 git checkout tags/${TAG}
 cd ..
 
