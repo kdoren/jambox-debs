@@ -1,3 +1,13 @@
+sonobus (1.4.9-1) buster; urgency=medium
+
+  * Juce: add select all button to AudioDeviceSelectorComponent active ch list
+  * add sync metronome to file feature
+  * fix sync position issue with metronome
+  * add user drag reordering and caching. increased max jitter buffer
+  * add polarity invert options to FX groups
+
+ --  Kevin Doren <kevin@doren.org>  Tue, 18 Jan 2022 19:30:00 -0800
+
 sonobus (1.4.6-1) buster; urgency=medium
 
   * Accessibility improvements

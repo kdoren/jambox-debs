@@ -4,10 +4,10 @@ Priority: optional
 Maintainer: "Kevin Doren" <kevin@doren.org>
 Build-Depends:
  build-essential,
+ cmake,
  debhelper (>= 11),
  dh-exec,
  libopus-dev,
- libcurl4-dev,
  libxrandr-dev,
  libxinerama-dev,
  libxcursor-dev,

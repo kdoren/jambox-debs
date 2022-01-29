@@ -1,7 +1,12 @@
 #!/usr/bin/make -f
 
+# Building on Raspberry Pi can cause error from dwz 0.12-3 due to missing debug info section 
+# Workaround is to install package "dwz" from buster-backports 
+# see: http://marksrpicluster.blogspot.com/2019/12/add-buster-backports-to-raspberry-pi.html 
+
 export CONFIG=Release
-#export CFLAGS="-march=native"
+export CXXFLAGS="-march=native"
+export CFLAGS="-march=native"
 
 %:
 	dh $@
