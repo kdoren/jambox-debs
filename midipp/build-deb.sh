@@ -5,8 +5,8 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 cd $DIR
 
 PACKAGE=midipp
-VERSION=2.1.1
-TAG=v2.1.1
+VERSION=2.1.2
+TAG=v2.1.2
 
 PKGFOLDER=${PACKAGE}-${VERSION}
 
