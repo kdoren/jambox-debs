@@ -1,3 +1,13 @@
+hpsjam (1.0.21-1) buster; urgency=medium
+
+  * Update statistics tab.
+  * Update jitter algorithm.
+  * Reduce buffering time to 16 milliseconds.
+  * Rework how jitter and audio buffering works.
+  * Increase the low water level to 4ms.
+
+ --  Kevin Doren <kevin@doren.org>  Sat, 29 Jan 2022 23:00:00 -0800
+
 hpsjam (1.0.20-1) buster; urgency=medium
 
   * Add support for muting peer audio on connect.
