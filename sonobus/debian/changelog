@@ -1,3 +1,10 @@
+sonobus (1.4.9-2) buster; urgency=medium
+
+  * patch to revert JUCE commit 802f33b of Jul 27, 2021 (priority change}
+  * (commit 802f33b caused degraded audio performance on Raspberry Pi)
+
+ --  Kevin Doren <kevin@doren.org>  Fri, 04 Feb 2022 01:00:00 -0800
+
 sonobus (1.4.9-1) buster; urgency=medium
 
   * Juce: add select all button to AudioDeviceSelectorComponent active ch list
