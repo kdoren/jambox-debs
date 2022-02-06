@@ -10,9 +10,9 @@ override_dh_auto_build:
 	cmake -S . -B builds -G "Unix Makefiles" && \
 	cd third_party/flatbuffers && \
 	cmake -S . -B LinuxBuilds -G "Unix Makefiles" -D FLATBUFFERS_CXX_FLAGS="-Wno-error" && \
-	cmake --build LinuxBuilds/ && \
+	cmake --build LinuxBuilds/ -j `nproc` && \
 	cd ../.. && \
-	cmake --build builds
+	cmake --build builds -j `nproc`
 
 override_dh_auto_test:
 	cd builds/common && make test

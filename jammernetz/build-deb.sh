@@ -17,14 +17,10 @@ git pull --recurse-submodules
 git checkout tags/${TAG}
 cd ..
 
-if [ -d ${PKGFOLDER} ]; then
-  rm -rf ${PKGFOLDER}/{aws,builds,Client,cmake,common,modules,projucer,third_party,obj-arm-linux-gnueabihf,Server}
-  rm -f ${PKGFOLDER}/*.sh ${PKGFOLDER}/{azure-pipelines.yml,buildWindows.bat,client-screenshot.PNG,CMakeLists.txt,conanfile.txt,LICENSE.md,RandomNumbers.bin,README.md}
-fi
-
-mkdir -p ${PKGFOLDER}
+[[ -d ${PKGFOLDER} ]] && rm -rf ${PKGFOLDER}
+mkdir -p ${PKGFOLDER}/debian
+cp -r debian/* ${PKGFOLDER}/debian/
 cp -r src/* ${PKGFOLDER}
-#tar -czf ${PKGFOLDER}.tar.gz --exclude .git ${PKGFOLDER}
 
 cd ${PKGFOLDER}
 
