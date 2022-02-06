@@ -1,4 +1,4 @@
 #!/usr/bin/dh-exec
 builds/Client/JammerNetzClient usr/bin/
 builds/Server/JammerNetzServer usr/bin/
-builds/gnu_8.3_cxx17_32_relwithdebinfo/libtbb.so.12.2 usr/lib/arm-linux-gnueabihf/
+builds/gnu_*_cxx17_32_relwithdebinfo/libtbb.so.12.2 usr/lib/arm-linux-gnueabihf/
