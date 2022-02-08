@@ -1,3 +1,10 @@
+midipp (2.1.2-2) unstable; urgency=medium
+
+  * static link for libumidi
+  * support build under Debian bullseye
+
+ --  Kevin Doren <kevin@doren.org>  Tue, 08 Feb 2022 00:30:00 -0800
+
 midipp (2.1.2-1) buster; urgency=medium
 
   * Add support for ALSA
