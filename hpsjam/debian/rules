@@ -1,7 +1,6 @@
 #!/usr/bin/make -f
 
 export QT_SELECT=qt5
-export DEB_BUILD_OPTIONS=nostrip
 
 %:
 	dh $@
@@ -10,7 +9,6 @@ override_dh_auto_configure:
 	mkdir -p build && cd build && qmake PREFIX=/usr QMAKE_CFLAGS_ISYSTEM=-I ../HpsJam.pro
 
 override_dh_auto_build:
-	cd build && qmake PREFIX=/usr QMAKE_CFLAGS_ISYSTEM=-I ../HpsJam.pro && make clean
 	cd build && qmake PREFIX=/usr QMAKE_CFLAGS_ISYSTEM=-I ../HpsJam.pro && make -j`nproc` all
 
 override_dh_auto_install:
