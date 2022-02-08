@@ -1,0 +1,49 @@
+Author: Kevin Doren <kevin@doren.org>
+Description: fix qt5.15 build errors.
+
+Index: jamataba/src/Common/gui/intervalProgress/PiePaintStrategy.cpp
+===================================================================
+--- jamtaba.orig/src/Common/gui/intervalProgress/PiePaintStrategy.cpp	2022-02-07 00:05:57.716289699 +0000
++++ jamtaba/src/Common/gui/intervalProgress/PiePaintStrategy.cpp	2022-02-07 00:10:08.244764824 +0000
+@@ -1,4 +1,5 @@
+ #include "IntervalProgressDisplay.h"
++#include <QPainterPath>
+ #include <QPainter>
+ 
+ void IntervalProgressDisplay::PiePaintStrategy::paint(QPainter &p, const PaintContext &context, const PaintColors &colors)
+Index: jamataba/src/Common/gui/intervalProgress/IntervalProgressDisplay.h
+===================================================================
+--- jamtaba.orig/src/Common/gui/intervalProgress/IntervalProgressDisplay.h.orig	2022-02-07 00:06:42.866015260 +0000
++++ jamtaba/src/Common/gui/intervalProgress/IntervalProgressDisplay.h	2022-02-07 00:23:52.350464590 +0000
+@@ -3,6 +3,7 @@
+ 
+ #include <QFrame>
+ #include <QScopedPointer>
++#include <QPainterPath>
+ 
+ class QResizeEvent;
+ class QPaintEvent;
+Index: jamataba/src/Common/gui/chat/ChatMessagePanel.h
+===================================================================
+--- jamtaba.orig/src/Common/gui/chat/ChatMessagePanel.h.orig	2022-02-07 00:07:05.885875265 +0000
++++ jamtaba/src/Common/gui/chat/ChatMessagePanel.h	2022-02-07 00:18:11.041985894 +0000
+@@ -4,6 +4,7 @@
+ #include <QFrame>
+ #include <QNetworkAccessManager>
+ #include <QNetworkReply>
++#include <QtGui/QPainterPath>
+ 
+ namespace Ui {
+ class ChatMessagePanel;
+Index: jamataba/src/Common/gui/gui/LocalTrackViewStandalone.h
+===================================================================
+--- jamtaba.orig/src/Standalone/gui/LocalTrackViewStandalone.h.orig	2022-02-07 00:07:49.425610359 +0000
++++ jamtaba/src/Standalone/gui/LocalTrackViewStandalone.h	2022-02-07 00:21:46.181062549 +0000
+@@ -10,6 +10,7 @@
+ #include <QPushButton>
+ #include <QLabel>
+ #include <QSpacerItem>
++#include <QPainterPath>
+ 
+ class LocalTrackViewStandalone : public LocalTrackView
+ {

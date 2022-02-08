@@ -6,11 +6,10 @@ export QT_SELECT=qt5
 	dh $@
 
 override_dh_auto_configure:
-	cd PROJECTS/Standalone && qmake INCLUDEPATH+=../../minimp3 INCLUDEPATH+=/usr/include/miniupnpc Standalone.pro
+	cd PROJECTS/Standalone && qmake INCLUDEPATH+=../../minimp3 INCLUDEPATH+=/usr/include/miniupnpc SOURCEDIR+=../../minimp3 SOURCES+=../../minimp3/minimp3.c Standalone.pro
 	cd PROJECTS/VstScanner && qmake VstScanner.pro
 
 override_dh_auto_build:
-	cd minimp3 && make && gcc -Os minimp3.o player_alsa.o -o libminimp3.a -shared
 	cd PROJECTS/Standalone && make -j`nproc`
 	cd PROJECTS/VstScanner && make -j`nproc`
 

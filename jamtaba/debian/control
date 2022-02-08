@@ -5,7 +5,7 @@ Maintainer: "Kevin Doren" <kevin@doren.org>
 Build-Depends:
  build-essential,
  debhelper (>= 11),
- qt5-default,
+ dh-exec,
  qt5-qmake,
  qtdeclarative5-dev,
  qttools5-dev-tools,
@@ -21,6 +21,7 @@ Build-Depends:
  libavcodec-dev,
  libavutil-dev,
  libswresample-dev,
+ libswscale-dev,
  libminiupnpc17
 Standards-Version: 3.9.7
 Homepage: https://github.com/elieserdejesus/JamTaba

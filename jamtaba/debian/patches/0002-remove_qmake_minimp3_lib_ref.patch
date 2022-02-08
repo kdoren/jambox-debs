@@ -1,0 +1,16 @@
+Author: Kevin Doren <kevin@doren.org>
+Description: link with minimp3 to avoid shared lib.
+
+Index: jamataba/PROJECTS/Standalone/Standalone.pro
+===================================================================
+--- jamtaba.orig/PROJECTS/Standalone/Standalone.pro.orig	2022-02-07 20:13:17.616224175 +0000
++++ jamtaba/PROJECTS/Standalone/Standalone.pro	2022-02-07 20:13:33.406102298 +0000
+@@ -166,7 +166,7 @@
+     DEFINES += __LINUX_ALSA__
+ 
+ 
+-    LIBS += -L$$PWD/../../libs/$$LIBS_PATH -lportaudio -lminimp3 -lvorbisfile -lvorbisenc -lvorbis -logg -lavformat -lavcodec -lswscale -lavutil -lswresample -lminiupnpc -lx264
++    LIBS += -L$$PWD/../../libs/$$LIBS_PATH -lportaudio -lvorbisfile -lvorbisenc -lvorbis -logg -lavformat -lavcodec -lswscale -lavutil -lswresample -lminiupnpc -lx264
+     LIBS += -lasound
+     LIBS += -ldl
+     LIBS += -lz

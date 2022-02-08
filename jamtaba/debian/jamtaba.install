@@ -3,5 +3,3 @@ PROJECTS/Standalone/Jamtaba2 usr/bin/
 PROJECTS/Standalone/VstScanner usr/bin/
 installers/linux/Jamtaba2.desktop usr/share/applications/
 installers/linux/Jamtaba2.png usr/share/icons/
-minimp3/libminimp3.a /usr/lib/
-

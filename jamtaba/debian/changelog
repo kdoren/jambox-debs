@@ -1,3 +1,12 @@
+jamtaba (2.1.16-3) unstable; urgency=medium
+
+  * Raspberry Pi release 2.1.16-3
+  - build with minimp3 to avoid shared lib
+  - support building with qt5.15 for debian bullseye
+
+ --  Kevin Doren <kevin@doren.org>  Mon, 07 Feb 2022 12:00:00 -0800
+
+
 jamtaba (2.1.16-2) buster; urgency=medium
 
   * Raspberry Pi release 2.1.16-2
